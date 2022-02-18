@@ -1,12 +1,11 @@
 body {
+  background-color: rgb(174, 178, 185);
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
 
 #container {
-  border: solid 2px black;
-
   max-width: 960px;
   min-width: 960px;
   max-height: 960px;
@@ -17,7 +16,7 @@ body {
 }
 
 .square {
-  background-color: yellow;
+  background-color: white;
 }
 
 .square:hover {
