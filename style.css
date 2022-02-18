@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+}
