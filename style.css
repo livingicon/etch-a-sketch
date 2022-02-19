@@ -1,9 +1,14 @@
 body {
   background-color: rgb(174, 178, 185);
   display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#sketch {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
 }
 
 #btnClear {
@@ -12,7 +17,7 @@ body {
   padding: 25px;
 }
 
-#container {
+.container {
   max-width: 960px;
   min-width: 960px;
   max-height: 960px;
