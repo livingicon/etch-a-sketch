@@ -7,8 +7,30 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div id="sketch">
-    <button id="btnClear">CLEAR</button>
+
+  <!--HEADER-->
+  <div class="header">
+    <h1>Etch-A-Sketch</h1>
   </div>
+
+  <!--CONTENT-->
+  <div id="sketch">
+    <!--TOOLBAR-->
+    <div class="toolbar">
+      <div class="slidecontainer">
+        <p>Canvas Size</p>
+        <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
+      </div>
+      <button id="btnClear">CLEAR</button>
+      <button id="btnErase">ERASER</button>
+    </div>
+    <!--CANVAS (added in JS)-->
+  </div>
+
+  <!--FOOTER-->
+  <div class="footer">
+    <p>Josh Hancock</p>
+  </div>
+
 </body>
 </html>

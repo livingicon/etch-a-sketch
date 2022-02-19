@@ -1,7 +1,7 @@
 const sketch = document.querySelector('#sketch');
 const clear = document.querySelector('#btnClear');
 
-clear.addEventListener('click', reload);
+clear.addEventListener('click', reset);
 
 notePad();
 
@@ -29,18 +29,35 @@ function draw(e) {
   e.target.style.backgroundColor = "black";
 }
 
-function reload() {
-  const gridSize = prompt("How many?", 16);
-  if (gridSize != null) {//not working to keep it from deleting if there is null value
+function reset() {
+  const gridSize = prompt("Input desired grid size number between 16-100", 16);
+  if(gridSize < 16) {//this covers cancel
+    const refresh = document.querySelector('.container');
+    sketch.removeChild(refresh);
+    notePad();
+    console.log(gridSize);
+    console.log(typeof(gridSize));
+  } else if(gridSize > 100) {
+    const refresh = document.querySelector('.container');
+    sketch.removeChild(refresh);
+    notePad(100);
+    console.log(Number(gridSize));
+    console.log(typeof(gridSize));
+  }/* else if (Number(gridSize) == NaN) {//this is keeping it from disappearing
+    const refresh = document.querySelector('.container');
+    sketch.removeChild(refresh);
+    notePad(16);
+    console.log(gridSize);
+    console.log(typeof(gridSize));
+  }*/ else {
     const refresh = document.querySelector('.container');
     sketch.removeChild(refresh);
     notePad(gridSize);
+    console.log(gridSize);
+    console.log(typeof(gridSize));
+    console.log(Number(gridSize));
   }
 }
 
-/*
-const gridSize = prompt("How many?", 16);
-if (gridSize != null) {
-  notePad(gridSize);
-}
-*/
+//not accept over 100 and must accept a number
+//make it mousedown and mouseenter?

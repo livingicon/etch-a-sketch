@@ -1,17 +1,40 @@
 body {
   background-color: rgb(174, 178, 185);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 50px;
+}
+
+.header {
+
 }
 
 #sketch {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-#btnClear {
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  padding: 10px;
+}
+
+.slidecontainer {
+  color: white;
+  font-size: 50px;
+}
+
+.slider {
+  width: 100%;
+  height: 25px;
+  background: yellow;
+  outline: none;
+}
+
+button {
   font-size: 50px;
   width: 300px;
   padding: 25px;
@@ -26,8 +49,14 @@ body {
 
   display: flex;
   flex-wrap: wrap;
+  background-color: blue;
+  padding: 10px;
 }
 
 .square {
   background-color: white;
+}
+
+.footer {
+
 }
