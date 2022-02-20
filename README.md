@@ -1,1 +1,1 @@
-# etch-a-sketch
+This is an Odin Project challenge using basic event listeners. The goal is to explore mouseover and enter events to create a flexible sized grid to draw on. 
